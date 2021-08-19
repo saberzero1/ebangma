@@ -3,15 +3,52 @@
     --text-color-main: white;
     --background-color: black;
     --background-color-light: grey;
+    --lining-color: grey;
+    --lining-color-light: grey;
     --accent-color: orange;
     --accent-color-light: orange;
 }
 
 body {
-    background-color: --background-color;
-    color: --text-color-main;
+    background-color: var(--background-color);
+    color: var(--text-color-main);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: --text-color-header;
+    color: var(--text-color-header);
+}
+
+#card {
+    position: fixed;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 15px;
+    background-color: var(--background-color-light);
+    @media screen and (max-width: 850px) {
+        position: static;
+        width: 100&;
+        margin: 0px;
+    }
+}
+
+#container {
+    width: 60%;
+    margin: 10px;
+    padding: 15px;
+    background-color: var(--background-color-light);
+    @media screen and (max-width: 850px) {
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+.content {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--lining-color);
+    box-sizing: border-box;
 }
