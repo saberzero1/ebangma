@@ -1,4 +1,3 @@
-<script type="text/javascript">
 function f1() {
   if(document.all) { return false; }
 }
@@ -16,4 +15,3 @@ else {
   document.oncontextmenu = f1;
 }
 document.oncontextmenu = new function("return false");
-</script>
