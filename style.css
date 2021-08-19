@@ -24,6 +24,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     height: 100%;
     box-sizing: border-box;
+    z-index: 5;
     padding: 15px;
     margin: 25px;
     float: right;
@@ -39,6 +40,7 @@ h1, h2, h3, h4, h5, h6 {
     float: left;
     padding: 15px;
     box-sizing: border-box;
+    z-index: 5;
     min-width: 400px;
     max-width: 700px;
     height: 700px;
@@ -48,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #fourty {
     width: 45%;
-    z-index: 3;
+    z-index: 5;
     position: fixed;
     top: 0;
     left: 0;
@@ -56,46 +58,53 @@ h1, h2, h3, h4, h5, h6 {
 
 #sixty {
     width: 55%;
-    z-index: 3;
+    z-index: 5;
     position: fixed;
     top: 0;
     left: 45vw;
 }
 
 .vertical-sync {
+    position: relative;
     display: table-cell;
     vertical-align: middle;
+    z-index: 5;
     height: 100%;
     width: 100%;
 }
 
 .center {
+    position: relative;
     display: table;
+    z-index: 5;
     width: 100%;
     height: 100vh;
 }
 
 @media screen and (max-width: 1220px) {
     #card {
-        position: static;
-        width: 100%;
+        position: relative;
+        z-index: 5;
+        width: 100vw;
         height: auto;
         margin: 0px;
     }
     #container {
-        position: static;
-        width: 100%;
+        position: relative;
+        z-index: 5;
+        width: 100vw;
         height: auto;
         max-width: 100vw;
         margin: 0px;
     }
     #fourty {
-        position: static;
-        width: 100%;
+        position: relative;
+        width: 100vw;
     }
     #sixty {
-        position: static;
-        width: 100%;
+        position: relative;
+        left: 0;
+        width: 100vw;
     }
     .vertical-sync {
         display: block;
