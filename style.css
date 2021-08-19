@@ -23,7 +23,8 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     box-sizing: border-box;
     padding: 15px;
-    margin: 0 auto;
+    margin: 25px;
+    float: right;
     width: 530px;
     height: 700px;
     background-color: var(--background-color-light);
@@ -31,7 +32,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #container {
     width: 55%;
-    margin: 0 auto;
+    margin: 25px;
+    float: left;
     padding: 15px;
     box-sizing: border-box;
     min-width: 400px;
@@ -68,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1220px) {
     #card {
         position: static;
         width: 100%;
