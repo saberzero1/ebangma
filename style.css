@@ -1,12 +1,13 @@
 :root {
-    --text-color-header: white;
-    --text-color-main: white;
-    --background-color: black;
-    --background-color-light: grey;
-    --lining-color: grey;
-    --lining-color-light: grey;
-    --accent-color: orange;
-    --accent-color-light: orange;
+    --text-color-header: #e0e0e2;
+    --text-color-main: #a2a2a6;
+    --text-color-minor: #ff9800;
+    --background-color: #1c1c21;
+    --background-color-light: #31313a;
+    --lining-color: #31313a;
+    --lining-color-light: #3b3c45;
+    --accent-color: #ff9800;
+    --accent-color-light: #fffefd;
 }
 
 body {
@@ -25,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
     width: 530px;
     height: 700px;
-    background-color: greenyellow;
+    background-color: var(--background-color-light);
 }
 
 #container {
@@ -37,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 700px;
     height: 700px;
     width: 70%;
-    background-color: red;
+    background-color: var(--background-color-light);
 }
 
 #fourty {
