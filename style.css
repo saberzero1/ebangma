@@ -30,6 +30,7 @@ h1, h2, h3, h4, h5, h6 {
     float: right;
     width: 530px;
     height: 700px;
+    border-radius: 5px;
     background-color: var(--background-color-light);
 }
 
@@ -45,6 +46,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 700px;
     height: 700px;
     width: 70%;
+    border-radius: 5px;
     background-color: var(--background-color-light);
 }
 
@@ -85,17 +87,61 @@ h1, h2, h3, h4, h5, h6 {
     #card {
         position: relative;
         z-index: 5;
-        width: 100vw;
+        min-width: 600px;
+        width: 70%;
         height: auto;
-        margin: 0px;
+        margin: 15px auto;
+        float: none;
     }
     #container {
         position: relative;
         z-index: 5;
-        width: 100vw;
+        min-width: 600px;
+        width: 70%;
         height: auto;
         max-width: 100vw;
-        margin: 0px;
+        margin: 15px auto;
+        float: none;
+    }
+    #fourty {
+        position: relative;
+        width: 100vw;
+    }
+    #sixty {
+        position: relative;
+        left: 0;
+        width: 100vw;
+    }
+    .vertical-sync {
+        display: block;
+    }
+
+    .center {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #card {
+        position: relative;
+        z-index: 5;
+        min-width: 100%;
+        width: 100%;
+        height: auto;
+        margin: 15px auto;
+        float: none;
+    }
+    #container {
+        position: relative;
+        z-index: 5;
+        min-width: 100%;
+        width: 100%;
+        height: auto;
+        max-width: 100vw;
+        margin: 15px auto;
+        float: none;
     }
     #fourty {
         position: relative;
