@@ -1,3 +1,17 @@
+:root {
+    --text-color-header: white;
+    --text-color-main: white;
+    --background-color: black;
+    --background-color-light: grey;
+    --accent-color: orange;
+    --accent-color-light: orange;
+}
+
 body {
-    background-color: grey;
+    background-color: --background-color;
+    color: --text-color-main;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: --text-color-header;
 }
