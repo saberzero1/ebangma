@@ -176,14 +176,14 @@ h1, h2, h3, h4, h5, h6 {
 #banner-top {
     background-color: var(--lining-color);
     position: relative;
-    height: 325px;
+    height: 250px;
     width: 100%;
 }
 
 #banner {
     background-color: var(--accent-color);
     position: relative;
-    height: 75px;
+    height: 150px;
     width: 100%;
     border-bottom-left-radius:50%;
     border-bottom-right-radius:50%;
