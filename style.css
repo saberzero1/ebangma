@@ -175,6 +175,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #banner {
     background-color: var(--accent-color);
+    position: relative;
     height: 400px;
     width: 100%;
     border-bottom-left-radius:50%;
