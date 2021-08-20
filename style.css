@@ -26,7 +26,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     box-sizing: border-box;
     z-index: 5;
-    padding: 15px;
     margin: 25px;
     float: right;
     width: 530px;
@@ -51,6 +50,20 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--background-color-light);
     overflow-y: scroll;
 }
+
+#container::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+  }
+  
+  #container::-webkit-scrollbar-track {
+    background: var(--background-color-light);        /* color of the tracking area */
+  }
+  
+  #container::-webkit-scrollbar-thumb {
+    background-color: var(--lining-color);    /* color of the scroll thumb */
+    border-radius: 4px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--lining-color-light);  /* creates padding around scroll thumb */
+  }
 
 #fourty {
     width: 45%;
@@ -180,6 +193,8 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box;
     height: 200px;
     width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 #banner {
@@ -188,8 +203,8 @@ h1, h2, h3, h4, h5, h6 {
     height: 100px;
     width: 100%;
     box-sizing: border-box;
-    border-bottom-left-radius:50%;
-    border-bottom-right-radius:50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 
 #profile-picture {
@@ -202,29 +217,42 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid var(--lining-color);
+    box-sizing: border-box;
     margin-top: -75px;
 }
 
 #name {
     text-align: center;
+    height: 50px;
 }
 
 .js-replace-text {
     text-align: center;
+    height: 35px;
     color: var(--accent-color);
 }
 
 .fifty {
     display: flex;
     width: 100%;
+    height: calc(100% - (200px + 100px + 50px + 35px + 75px));
     box-sizing: border-box;
 }
 
 .fifty > div {
     width: 50%;
-    margin-top: 25px;
-    margin-bottom: 25px;
     text-align: center;
+    margin-top: calc(100% - (100px + 50px + 35px + 75px + 100px));
+}
+
+#icons {
+    height: 25px;
+    text-align: center;
+}
+
+.space {
+    display: inline-block;
+    width: 10px;
 }
 
 
