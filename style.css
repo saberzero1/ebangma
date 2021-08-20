@@ -193,6 +193,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #profile-picture {
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 150px;
@@ -200,6 +201,7 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid var(--lining-color);
+    top: -100px;
 }
 
 
