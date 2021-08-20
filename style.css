@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #profile-picture {
-    display: block;
+    display: inline-block;
     position: relative;
     margin-left: auto;
     margin-right: auto;
