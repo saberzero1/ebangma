@@ -177,6 +177,7 @@ h1, h2, h3, h4, h5, h6 {
 #banner-top {
     background-color: var(--accent-color);
     position: relative;
+    box-sizing: border-box;
     height: 200px;
     width: 100%;
 }
@@ -186,6 +187,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     height: 100px;
     width: 100%;
+    box-sizing: border-box;
     border-bottom-left-radius:50%;
     border-bottom-right-radius:50%;
 }
