@@ -281,7 +281,11 @@ h1, h2, h3, h4, h5, h6 {
 .fifty > div {
     width: 50%;
     text-align: center;
-    margin-top: calc(100% - (100px + 50px + 35px + 75px + 100px));
+    margin-top: calc(100% - (100px + 50px + 35px + 75px + 100px + 25px));
+    border-top: 3px solid var(--lining-color-light);
+    padding-top: 25px;
+    margin-bottom: 0px;
+    height: 70px;
 }
 
 #icons {
@@ -292,6 +296,10 @@ h1, h2, h3, h4, h5, h6 {
 .space {
     display: inline-block;
     width: 10px;
+}
+
+.right-border {
+    border-right: 3px solid var(--lining-color-light);
 }
 
 
