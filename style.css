@@ -32,6 +32,10 @@ a {
     padding-top: 25px;
 }
 
+hr {
+    border: 2px solid var(--lining-color-light);
+}
+
 .link {
     display: block;
     width: 100%;
