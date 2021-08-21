@@ -11,14 +11,6 @@
     --accent-color-light: #fffefd;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
- * {
-	 box-sizing: border-box;
-	 margin: 0;
-	 padding: 0;
-	 font-weight: 300;
-}
-
 body {
     background-color: var(--background-color);
     color: var(--text-color-main);
@@ -442,3 +434,10 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
  
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
+ * {
+	 box-sizing: border-box;
+	 margin: 0;
+	 padding: 0;
+	 font-weight: 300;
+}
