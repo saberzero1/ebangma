@@ -4,6 +4,7 @@
     --text-color-minor: #ff9800;
     --background-color: #1c1c21;
     --background-color-light: #31313a;
+    --background-color-light-transparent: #31313a77;
     --background-color-boxes: #26262c;
     --lining-color: #31313a;
     --lining-color-light: #3b3c45;
@@ -42,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     height: 100%;
     box-sizing: border-box;
-    z-index: 5;
+    z-index: 6;
     margin: 25px;
     float: right;
     width: 530px;
@@ -58,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
     float: left;
     padding: 15px;
     box-sizing: border-box;
-    z-index: 5;
+    z-index: 6;
     min-width: 400px;
     max-width: 700px;
     height: 700px;
@@ -84,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #fourty {
     width: 45%;
-    z-index: 5;
+    z-index: 6;
     position: fixed;
     top: 0;
     left: 0;
@@ -92,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #sixty {
     width: 55%;
-    z-index: 5;
+    z-index: 6;
     position: fixed;
     top: 0;
     left: 45vw;
@@ -102,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     display: table-cell;
     vertical-align: middle;
-    z-index: 5;
+    z-index: 6;
     height: 100%;
     width: 100%;
 }
@@ -110,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
 .center {
     position: relative;
     display: table;
-    z-index: 5;
+    z-index: 6;
     width: 100%;
     height: 100vh;
 }
@@ -118,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 1220px) {
     #card {
         position: relative;
-        z-index: 5;
+        z-index: 6;
         min-width: 600px;
         width: 70%;
         max-height: 700px;
@@ -128,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     #container {
         position: relative;
-        z-index: 5;
+        z-index: 6;
         min-width: 600px;
         width: 70%;
         height: auto;
@@ -189,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 600px) {
     #card {
         position: relative;
-        z-index: 5;
+        z-index: 6;
         min-width: 100%;
         width: 100%;
         height: auto;
@@ -198,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     #container {
         position: relative;
-        z-index: 5;
+        z-index: 6;
         min-width: 100%;
         width: 100%;
         height: auto;
@@ -325,6 +326,19 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
 }
 
+#background-boxes {
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    opacity: 1;
+    background-image:  linear-gradient(30deg, var(--background-color-light) 12%, transparent 12.5%, transparent 87%, var(--background-color-light) 87.5%, var(--background-color-light)), linear-gradient(150deg, var(--background-color-light) 12%, transparent 12.5%, transparent 87%, var(--background-color-light) 87.5%, var(--background-color-light)), linear-gradient(30deg, var(--background-color-light) 12%, transparent 12.5%, transparent 87%, var(--background-color-light) 87.5%, var(--background-color-light)), linear-gradient(150deg, var(--background-color-light) 12%, transparent 12.5%, transparent 87%, var(--background-color-light) 87.5%, var(--background-color-light)), linear-gradient(60deg, var(--background-color-light-transparent) 25%, transparent 25.5%, transparent 75%, var(--background-color-light-transparent) 75%, var(--background-color-light-transparent)), linear-gradient(60deg, var(--background-color-light-transparent) 25%, transparent 25.5%, transparent 75%, var(--background-color-light-transparent) 75%, var(--background-color-light-transparent));
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    filter: brightness(0.40);
+}
+
 
 
 
@@ -343,10 +357,11 @@ h1, h2, h3, h4, h5, h6 {
 	 left: 0;
 	 width: 100%;
 	 height: 100%;
-	 z-index: 1;
+	 z-index: 2;
+     opacity: 0.5;
 }
  .bg-bubbles li {
-     z-index: 2;
+     z-index: 3;
 	 position: absolute;
 	 list-style: none;
 	 display: block;
