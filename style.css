@@ -122,7 +122,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh;
 }
 
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1220px), (max-height: 768px) {
     #card {
         position: relative;
         z-index: 6;
@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-@media screen and (max-width: 600px), (max-height: 768px) {
+@media screen and (max-width: 600px) {
     #card {
         position: relative;
         z-index: 6;
