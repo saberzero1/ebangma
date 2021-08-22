@@ -517,7 +517,8 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
  
-/*@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);*/
+/*@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">*/
  * {
 	 box-sizing: border-box;
 	 margin: 0;
