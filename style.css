@@ -9,6 +9,7 @@
     --lining-color: #31313a;
     --lining-color-light: #3b3c45;
     --accent-color: #ff9800;
+    --accent-color-transparent: #ff980077;
     --accent-color-light: #fffefd;
 }
 
@@ -282,9 +283,13 @@ h1, h2, h3, h4, h5, h6 {
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid var(--lining-color);
+    border-width: 2px;
+    border-style: solid;
+    border-image-source: linear-gradient(135deg, var(--lining-color-light) 0%, var(--background-color-light) 100%);
     box-sizing: border-box;
     margin-top: -75px;
+    -webkit-box-shadow: -3px 3px 0px 0px var(--accent-color-transparent); 
+    box-shadow: -3px 3px 0px 0px var(--accent-color-transparent);
 }
 
 #name {
