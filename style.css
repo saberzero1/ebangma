@@ -26,7 +26,12 @@ a {
 }
 
 hr {
-    border: 2px solid var(--lining-color-light);
+    position: relative;
+    left: -25px;
+    height: 2px;
+    border-width: 0px;
+    background: var(--background-color-light);
+    background: linear-gradient(135deg, var(--lining-color-light) 0%, var(--background-color-light) 100%);
 }
 
 .link {
@@ -244,6 +249,10 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box;
 }
 
+.content-title {
+    margin: 10px;
+}
+
 #banner-top {
     background-color: var(--accent-color);
     position: relative;
@@ -300,7 +309,10 @@ h1, h2, h3, h4, h5, h6 {
     width: 50%;
     text-align: center;
     margin-top: calc(100% - (100px + 50px + 35px + 75px + 100px + 25px));
-    border-top: 3px solid var(--lining-color-light);
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(135deg, var(--lining-color-light) 0%, var(--background-color-light) 100%);
     margin-bottom: 0px;
     height: 70px;
 }
@@ -316,7 +328,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .right-border {
-    border-right: 3px solid var(--lining-color-light);
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(135deg, var(--lining-color-light) 0%, var(--background-color-light) 100%);
 }
 
 .svg {
