@@ -355,6 +355,10 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
+.clear {
+    clear: both;
+}
+
 .text-box {
     background-color: var(--accent-color);
     color: var(--text-color-header);
@@ -362,6 +366,7 @@ h1, h2, h3, h4, h5, h6 {
     float: left;
     padding: 3px 10px;
     font-weight: bold;
+    display: inline;
 }
 
 #icons {
