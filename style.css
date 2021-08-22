@@ -333,20 +333,26 @@ h1, h2, h3, h4, h5, h6 {
     padding: 25px;
     text-align: center;
     margin-bottom: 0px;
+    font-weight: bold;
 }
 
 .left-text {
-    text-align: justify;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.6;
 }
 
 .right-text {
     text-align: right;
+    font-weight: bold;
+    line-height: 1.6;
 }
 
 .inline {
     display: inline;
     float: right;
     padding: 3px 10px;
+    font-weight: bold;
 }
 
 .text-box {
@@ -355,6 +361,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 3px;
     float: left;
     padding: 3px 10px;
+    font-weight: bold;
 }
 
 #icons {
