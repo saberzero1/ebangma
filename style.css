@@ -240,7 +240,13 @@ h1, h2, h3, h4, h5, h6 {
         height: 100vh;
         overflow-y: scroll !important;
         overflow-x: hidden;
-   }
+    }
+    .content-fifty > div {
+        width: 100%;
+    }
+    .right-border-content {
+        border: none;
+    }
 }
 
 .content {
@@ -380,7 +386,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 10px;
 }
 
-.right-border {
+.right-border, .right-border-content {
     border-right-width: 2px;
     border-right-style: solid;
     border-image-slice: 1;
