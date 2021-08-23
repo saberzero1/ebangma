@@ -241,6 +241,10 @@ h1, h2, h3, h4, h5, h6 {
         overflow-y: scroll !important;
         overflow-x: hidden;
     }
+    .content-fifty {
+        display: flex;
+        flex-flow: row wrap;
+    }
     .content-fifty > div {
         min-width: 100%;
         width: 100%;
