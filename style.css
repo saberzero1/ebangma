@@ -244,8 +244,6 @@ h1, h2, h3, h4, h5, h6 {
     .content-fifty > div {
         min-width: 100%;
         width: 100%;
-        float: left;
-        clear: both;
     }
     .right-border-content {
         border: none;
