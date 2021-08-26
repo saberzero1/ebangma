@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   #container::-webkit-scrollbar-thumb {
-    background-color: var(--lining-color);    /* color of the scroll thumb */
+    background-color: var(--accent-color);    /* color of the scroll thumb */
     border-radius: 4px;       /* roundness of the scroll thumb */
     border: 3px solid var(--lining-color-light);  /* creates padding around scroll thumb */
   }
@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .wrapper::-webkit-scrollbar-thumb {
-        background-color: var(--lining-color);    /* color of the scroll thumb */
+        background-color: var(--accent-color);    /* color of the scroll thumb */
         border-radius: 4px;       /* roundness of the scroll thumb */
         border: 3px solid var(--lining-color-light);  /* creates padding around scroll thumb */
     }
