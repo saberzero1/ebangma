@@ -329,7 +329,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-box {
     background-color: var(--accent-color);
-    color: var(--text-color-header);
+    color: var(--background-color-light);
     border-radius: 3px;
     float: left;
     padding: 3px 10px;
