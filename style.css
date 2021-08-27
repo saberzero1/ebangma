@@ -246,9 +246,9 @@ h1, h2, h3, h4, h5, h6 {
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border-width: 2px;
+    border-width: 0px;
     border-style: solid;
-    border-image-source: linear-gradient(135deg, var(--lining-color-light) 0%, var(--background-color-light) 100%);
+    border-color: transparent;
     box-sizing: border-box;
     margin-top: -75px;
     -webkit-box-shadow: -3px 3px 0px 0px var(--accent-color-transparent); 
