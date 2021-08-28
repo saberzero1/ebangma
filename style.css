@@ -221,20 +221,35 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--accent-color);
     position: relative;
     box-sizing: border-box;
-    height: 200px;
+    height: 225px;
     width: 100%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
 #banner {
-    background-color: var(--accent-color);
     position: relative;
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 75px;
     width: 100%;
     box-sizing: border-box;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+}
+
+#banner-left {
+    right: 0px;
+    background: linear-gradient(to left bottom, var(--accent-color) 50%, transparent 50%);
+    width: 50%;
+    height: 75px;
+}
+
+#banner-right {
+    left: 0px;
+    background: linear-gradient(to left bottom, var(--accent-color) 50%, transparent 50%);
+    width: 50%;
+    height: 75px;
+    transform: scaleX(-1);
 }
 
 #profile-picture {
