@@ -262,6 +262,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #typewriter-container {
     width: 100%;
+    color: var(--accent-color) !important;
     text-align: center;
     height: 35px;
 }
