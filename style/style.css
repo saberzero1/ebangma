@@ -283,7 +283,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .js-replace-text {
-    width: 175px;
+    width: 140px;
     text-align: left !important;
     color: var(--accent-color) !important;
     margin: 0 auto;
