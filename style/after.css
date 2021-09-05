@@ -31,6 +31,12 @@
 .fa-instagram:before {
     content: "\f16d";
 }
+.fa-download:before {
+    content:"\f019"
+}
+.fa-envelope:before {
+    content:"\f0e0"
+}
 
 @keyframes typing {
     0.0000%, 27.3488% { content: ""; }
