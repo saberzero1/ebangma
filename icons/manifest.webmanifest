@@ -3,7 +3,7 @@
     "background_color": "#ff9800",
     "display": "standalone",
     "scope": "/",
-    "start_url": "https://emilebangma.com",
+    "start_url": "https://emilebangma.com/",
     "short_name": "Portfolio",
     "name": "Emile Bangma - Portfolio",
     "description": "CV/portfolio. Computer Science student at Utrecht University",
@@ -27,6 +27,12 @@
             "src": "/icons/icon-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
+        }
+        {
+            "src": "/icons/maskable-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
         }
     ]
 }
