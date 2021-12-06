@@ -133,7 +133,7 @@ h6 {
         overflow-y: scroll;
         overflow-x: hidden;
     }
-    .wrapper::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 0px;
     }
     .wrapper::-webkit-scrollbar-track {
