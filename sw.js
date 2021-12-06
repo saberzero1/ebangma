@@ -4,7 +4,9 @@ var CACHE_NAME = APP_PREFIX + VERSION
 var URLS = [                            // Add URL you want to cache in this list.
   '/',                                  // If you have separate JS/CSS files,
   '/index.html',                        // add path to those files here
-  '/style/style.css'
+  '/style/',
+  '/icons/',
+  '/media/'
 ]
 
 // Respond with cached resources
