@@ -45,31 +45,8 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text-color-header);
 }
 
-.dashboard-left {
-    width: 47vw;
-    margin: 0 1vw 0 2vw;
-}
-
-.dashboard-right {
-    width: 47vw;
-    margin: 0 2vw 0 1vw;
-}
-
 .svg-embed {
     width: 100%;
-    margin: 0 auto;
-}
-
-.graph1 {
-    min-width: 518px;
-    min-height: 364px;
-    margin: auto;
-}
-
-.center-fix {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #card {
@@ -179,12 +156,6 @@ h1, h2, h3, h4, h5, h6 {
         background-color: var(--accent-color);    /* color of the scroll thumb */
         border-radius: 4px;       /* roundness of the scroll thumb */
         border: 3px solid var(--lining-color-light);  /* creates padding around scroll thumb */
-    }
-    .svg-embed {
-        width: 100%;
-    }
-    .dashboard-left, .dashboard-right {
-        width: 100%;
     }
 }
 
