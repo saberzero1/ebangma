@@ -6,7 +6,8 @@ var URLS = [                            // Add URL you want to cache in this lis
   '/index.html',                        // add path to those files here
   '/style/',
   '/icons/',
-  '/media/'
+  '/media/',
+  '/fonts/'
 ]
 
 // Respond with cached resources
