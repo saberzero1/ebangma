@@ -5,7 +5,7 @@ var URLS = [                                // Add URL you want to cache in this
   './style/style.min.css',
   './style/after.min.css',
   './index.html',                           // add path to those files here
-  './manifest.webmanifest'
+  './icon/manifest.webmanifest'
 ];
 
 // Respond with cached resources
