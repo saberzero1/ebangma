@@ -1,11 +1,11 @@
 var APP_PREFIX = 'EmileBangmaPortfolio_';     // Identifier for this app (this needs to be consistent across every cache update)
-var VERSION = 'version_04';                  // Version of the off-line cache (change this value everytime you want to update cache)
+var VERSION = 'version_05';                  // Version of the off-line cache (change this value everytime you want to update cache)
 var CACHE_NAME = APP_PREFIX + VERSION;
 var URLS = [                                // Add URL you want to cache in this list.                                  // If you have separate JS/CSS files,
-  './style/style.min.css',
-  './style/after.min.css',
-  './index.html',                           // add path to those files here
-  './icon/manifest.webmanifest'
+  'https://emilebangma.com/style/style.min.css',
+  'https://emilebangma.com/style/after.min.css',
+  'https://emilebangma.com/index.html',                           // add path to those files here
+  'https://emilebangma.com/icon/manifest.webmanifest'
 ];
 
 // Respond with cached resources
