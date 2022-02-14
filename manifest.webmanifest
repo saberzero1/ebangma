@@ -3,7 +3,7 @@
     "background_color": "#ff9800",
     "display": "standalone",
     "scope": "/",
-    "start_url": "https://emilebangma.com/index.html",
+    "start_url": "/",
     "short_name": "Portfolio",
     "name": "Emile Bangma - Portfolio",
     "description": "CV/portfolio. Computer Science student at Utrecht University",
