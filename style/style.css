@@ -31,6 +31,11 @@ hr {
     background: var(--background-color-light);
     background: linear-gradient(135deg, var(--lining-color-light) 0, var(--background-color-light) 100%);
 }
+.hidden {
+    width: 0px;
+    visibility: hidden;
+    opacity: 0;
+}
 .link {
     display: block;
     width: 100%;
