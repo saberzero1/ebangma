@@ -35,6 +35,7 @@ hr {
     width: 0px;
     visibility: hidden;
     opacity: 0;
+    font-size: 0px;
 }
 .link {
     display: block;
