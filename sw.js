@@ -1,10 +1,10 @@
 var APP_PREFIX = 'EmileBangmaPortfolio_';     // Identifier for this app (this needs to be consistent across every cache update)
-var VERSION = 'version_12';                  // Version of the off-line cache (change this value everytime you want to update cache)
+var VERSION = 'version_14';                   // Version of the off-line cache (change this value everytime you want to update cache)
 var CACHE_NAME = APP_PREFIX + VERSION;
-var URLS = [                                // Add URL you want to cache in this list.                                  // If you have separate JS/CSS files,
+var URLS = [                                  // Add URL you want to cache in this list.                                  // If you have separate JS/CSS files,
   '/style/style.min.css',
   '/style/after.min.css',
-  '/index.html',                           // add path to those files here
+  '/index.html',                              // add path to those files here
   '/manifest.webmanifest',
   '/media/emile-small.webp',
   '/fonts/fontawesome-webfont.woff2?v=4.7.0'
@@ -15,16 +15,9 @@ self.addEventListener('fetch', function (e) {
   console.log('fetch request : ' + e.request.url);
   e.respondWith(
     caches.match(e.request).then(function (request) {
-      if (request) { // if cache is available, respond with cache
-        console.log('responding with cache : ' + e.request.url);
-        return request;
-      } else {       // if there are no cache, try fetching request
-        console.log('file is not cached, fetching : ' + e.request.url);
+      if (!request) // if cache is available, respond with cache
         return fetch(e.request);
-      }
-
-      // You can omit if/else for console.log & put one line below like this too.
-      // return request || fetch(e.request)
+      return request;
     })
   );
 });
@@ -33,7 +26,6 @@ self.addEventListener('fetch', function (e) {
 self.addEventListener('install', function (e) {
   e.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
-      console.log('installing cache : ' + CACHE_NAME);
       return cache.addAll(URLS);
     })
   );
@@ -53,7 +45,6 @@ self.addEventListener('activate', function (e) {
 
       return Promise.all(keyList.map(function (key, i) {
         if (cacheWhitelist.indexOf(key) === -1) {
-          console.log('deleting cache : ' + keyList[i] );
           return caches.delete(keyList[i]);
         }
       }));
